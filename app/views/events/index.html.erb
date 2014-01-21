@@ -1,0 +1,10 @@
+<h1>Liste des événements</h1>
+<h2><%= @events.size%> Evénements</h2>
+<ul>
+	<% @events.each do |e| %>
+	<li> <strong><%= e.name %></strong> in <%= e.location %> <%= e.price %> € - Description: <%= e.description%></li>
+	<% end %>
+
+</ul>
+
+<%=link_to "Bienvenue", root_path %>
